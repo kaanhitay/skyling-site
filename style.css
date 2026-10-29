@@ -1,0 +1,41 @@
+/* Skyling web sayfaları (gizlilik, koşullar, destek): app'in "Gece mürekkebi" teması. Statik, JS yok. */
+:root {
+  --bg: #0B0B1A;
+  --card: #141428;
+  --line: #2A2A44;
+  --text: #EDE8DC;
+  --muted: #A09CB0;
+  --accent: #C9A86A;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px; flex-wrap: wrap; }
+.brand { font: 600 26px/1 "Cormorant Garamond", Georgia, serif; color: var(--text); letter-spacing: 0.3px; }
+nav { display: flex; gap: 18px; font-size: 14px; }
+nav a { color: var(--muted); }
+nav a[aria-current="page"] { color: var(--accent); }
+main { padding: 40px 0 56px; }
+h1 { font: 500 44px/1.1 "Cormorant Garamond", Georgia, serif; margin: 0 0 8px; }
+h2 { font: 500 26px/1.2 "Cormorant Garamond", Georgia, serif; margin: 36px 0 10px; }
+h3 { font-size: 16px; margin: 22px 0 6px; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.lang { font-size: 14px; margin-bottom: 28px; }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 20px 0; }
+.box p:first-child { margin-top: 0; }
+.box p:last-child { margin-bottom: 0; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+.label { font-size: 12px; letter-spacing: 1.6px; color: var(--accent); text-transform: uppercase; margin: 48px 0 0; padding-top: 32px; border-top: 1px solid var(--line); }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+footer .wrap { padding-top: 20px; padding-bottom: 28px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
+@media (max-width: 480px) { h1 { font-size: 36px; } }
